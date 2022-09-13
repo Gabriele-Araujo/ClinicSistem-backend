@@ -72,6 +72,8 @@ namespace ClinicSistem_backend
 
             app.UseHttpsRedirection();
 
+            app.UseCors("CorsPolicy");
+
             app.UseRouting();
 
             app.UseAuthorization();
