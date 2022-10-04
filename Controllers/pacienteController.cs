@@ -5,6 +5,7 @@ using ClinicSistem_backend.Data.Dtos.PacienteDto;
 using ClinicSistem_backend.Models;
 using ClinicSistem_backend.Services;
 using FluentResults;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,7 @@ using System.Threading.Tasks;
 
 namespace ClinicSistem_backend.Controllers
 {
+    [EnableCors("AnotherPolicy")]
     [ApiController]
     [Route("[controller]")]
     public class pacienteController : ControllerBase

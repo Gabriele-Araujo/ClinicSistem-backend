@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 
 namespace ClinicSistem_backend.Controllers
 {
+
     [Route("[controller]")]
     [ApiController]
     public class procedimentoController : ControllerBase
